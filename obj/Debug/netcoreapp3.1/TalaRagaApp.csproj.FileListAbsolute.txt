@@ -1,0 +1,11 @@
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp\TalaRagaApp\MainWindow.baml
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp\TalaRagaApp\MainWindow.g.cs
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp_MarkupCompile.cache
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp\TalaRagaApp\App.baml
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp\TalaRagaApp\App.g.cs
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.g.resources
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.AssemblyInfoInputs.cache
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.AssemblyInfo.cs
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.csproj.CoreCompileInputs.cache
+D:\Visual Studio\CarnaticComposer\CarnaticComposer\obj\Debug\netcoreapp3.1\TalaRagaApp.sourcelink.json
