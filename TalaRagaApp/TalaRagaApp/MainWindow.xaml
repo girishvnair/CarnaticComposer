@@ -1,0 +1,21 @@
+<Window x:Class="TalaRagaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tala Raga App" Height="400" Width="600">
+    <Grid>
+        <StackPanel VerticalAlignment="Top" Margin="10">
+            <TextBlock Text="Select Tala" FontWeight="Bold"/>
+            <ComboBox x:Name="talaComboBox" Width="200" Height="30"/>
+
+            <TextBlock Text="Select Raga" FontWeight="Bold" Margin="0,10,0,0"/>
+            <ComboBox x:Name="ragaComboBox" Width="200" Height="30"/>
+
+            <TextBlock Text="Arrange Notes" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBox x:Name="notesTextBox" Width="400" Height="100" AcceptsReturn="True" TextWrapping="Wrap"/>
+
+            <Button x:Name="playButton" Content="Play Notes" Width="100" Height="30" Margin="0,10,0,0" Click="PlayButton_Click"/>
+
+            <TextBlock x:Name="statusTextBlock" Margin="0,10,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
