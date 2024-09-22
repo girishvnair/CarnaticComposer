@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TalaRagaApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1983a7708abcfba7eab0a8263bf04e580cc11e05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8426893270e4e3566c3f2695e89930cb2e67b469")]
 [assembly: System.Reflection.AssemblyProductAttribute("TalaRagaApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TalaRagaApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

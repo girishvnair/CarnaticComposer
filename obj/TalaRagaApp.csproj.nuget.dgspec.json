@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual Studio\\CarnaticComposer\\CarnaticComposer\\TalaRagaApp.csproj": {}
+    "D:\\Visual Studio\\CarnaticComposer\\TalaRagaApp.csproj": {}
   },
   "projects": {
-    "D:\\Visual Studio\\CarnaticComposer\\CarnaticComposer\\TalaRagaApp.csproj": {
+    "D:\\Visual Studio\\CarnaticComposer\\TalaRagaApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual Studio\\CarnaticComposer\\CarnaticComposer\\TalaRagaApp.csproj",
+        "projectUniqueName": "D:\\Visual Studio\\CarnaticComposer\\TalaRagaApp.csproj",
         "projectName": "TalaRagaApp",
-        "projectPath": "D:\\Visual Studio\\CarnaticComposer\\CarnaticComposer\\TalaRagaApp.csproj",
+        "projectPath": "D:\\Visual Studio\\CarnaticComposer\\TalaRagaApp.csproj",
         "packagesPath": "C:\\Users\\Girish\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual Studio\\CarnaticComposer\\CarnaticComposer\\obj\\",
+        "outputPath": "D:\\Visual Studio\\CarnaticComposer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Girish\\AppData\\Roaming\\NuGet\\NuGet.Config"
