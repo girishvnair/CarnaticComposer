@@ -168,8 +168,6 @@ This project is licensed under the GNU License.
 
  Contact
 
-If you have any questions or feedback, feel free to reach out to [your email/contact info].
+If you have any questions or feedback, feel free to reach out to girishvnair@gmail.com.
 
----
 
-This README provides an overview of how to install, configure, and use the TalaRagaApp. It includes examples and clear instructions on getting the app running successfully.
