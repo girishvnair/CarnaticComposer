@@ -1,5 +1,7 @@
 
-![d9cd1f0d-ae84-45c0-8692-2d7873d908d9_0](https://github.com/user-attachments/assets/7e58b396-eee2-4556-ae2b-64b269e78310)
+<div style="text-align: center;">
+  <img src="https://github.com/user-attachments/assets/7e58b396-eee2-4556-ae2b-64b269e78310" alt="TalaRagaApp Image" width="96" height="96"/>
+</div>
 
 TalaRagaApp
 
