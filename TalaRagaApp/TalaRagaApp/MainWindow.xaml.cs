@@ -3,7 +3,7 @@ using NAudio.Wave;
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+using System.Threading.Tasks;
 using System.Windows;
 
 namespace TalaRagaApp
@@ -34,17 +34,24 @@ namespace TalaRagaApp
         // Load Tala and Raga data from JSON
         private void LoadData()
         {
-            // Load Ragas
-            string ragaJson = File.ReadAllText("Resources/ragas.json");
-            ragas = JsonConvert.DeserializeObject<List<Raga>>(ragaJson);
-            ragaComboBox.ItemsSource = ragas;
-            ragaComboBox.DisplayMemberPath = "Name";
+            try
+            {
+                // Load Ragas
+                string ragaJson = File.ReadAllText("Resources/ragas.json");
+                ragas = JsonConvert.DeserializeObject<List<Raga>>(ragaJson);
+                ragaComboBox.ItemsSource = ragas;
+                ragaComboBox.DisplayMemberPath = "Name";
 
-            // Load Talas
-            string talaJson = File.ReadAllText("Resources/talas.json");
-            talas = JsonConvert.DeserializeObject<List<Tala>>(talaJson);
-            talaComboBox.ItemsSource = talas;
-            talaComboBox.DisplayMemberPath = "Name";
+                // Load Talas
+                string talaJson = File.ReadAllText("Resources/talas.json");
+                talas = JsonConvert.DeserializeObject<List<Tala>>(talaJson);
+                talaComboBox.ItemsSource = talas;
+                talaComboBox.DisplayMemberPath = "Name";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading data: {ex.Message}");
+            }
         }
 
         // Handle Play Button Click
@@ -65,7 +72,7 @@ namespace TalaRagaApp
         }
 
         // Play Notes Based on Tala
-        private void PlayNotes(Raga raga, Tala tala, string arrangedNotes)
+        private async void PlayNotes(Raga raga, Tala tala, string arrangedNotes)
         {
             var notes = arrangedNotes.Split(' '); // Split arranged notes by space
             int beatDuration = 500; // Set a base duration for each beat
@@ -74,7 +81,7 @@ namespace TalaRagaApp
             {
                 if (noteFrequencies.ContainsKey(note))
                 {
-                    PlayFrequency(noteFrequencies[note], beatDuration);
+                    await PlayFrequencyAsync(noteFrequencies[note], beatDuration);
                 }
                 else
                 {
@@ -84,8 +91,8 @@ namespace TalaRagaApp
             }
         }
 
-        // Generate Sound with NAudio
-        private void PlayFrequency(float frequency, int duration)
+        // Generate Sound with NAudio asynchronously
+        private async Task PlayFrequencyAsync(float frequency, int duration)
         {
             var waveOut = new WaveOutEvent();
             var signalGenerator = new NAudio.Wave.SampleProviders.SignalGenerator()
@@ -94,9 +101,15 @@ namespace TalaRagaApp
                 Frequency = frequency,
                 Type = NAudio.Wave.SampleProviders.SignalGeneratorType.Sin
             };
+
             waveOut.Init(signalGenerator.Take(TimeSpan.FromMilliseconds(duration)));
             waveOut.Play();
-            System.Threading.Thread.Sleep(duration); // Pause for the duration of the note
+
+            // Wait asynchronously for the note duration, allowing the UI to stay responsive
+            await Task.Delay(duration);
+
+            waveOut.Stop();
+            waveOut.Dispose();
         }
     }
 
