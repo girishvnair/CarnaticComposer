@@ -1,10 +1,7 @@
- CarnaticComposer
-Carnatic Music Composer
-Here's a comprehensive README file for your TalaRagaApp that covers installation, usage, and other relevant details:
 
----
+![d9cd1f0d-ae84-45c0-8692-2d7873d908d9_0](https://github.com/user-attachments/assets/7e58b396-eee2-4556-ae2b-64b269e78310)
 
- TalaRagaApp
+TalaRagaApp
 
 TalaRagaApp is a Windows desktop application designed to help users experiment with Carnatic music by selecting different Ragas and Talas, arranging notes, and playing them back using NAudio. The app allows users to input musical notes based on the selected Raga and play them in accordance with the chosen Tala.
 
