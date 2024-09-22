@@ -17,14 +17,14 @@
           "C:\\Users\\Girish\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net8.0-windows"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
             "projectReferences": {}
           }
         },
@@ -40,8 +40,18 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.2.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,24 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.32, 3.1.32]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -79,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

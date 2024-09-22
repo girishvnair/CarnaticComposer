@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (WPF)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/netcoreapp3.1/TalaRagaApp.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "launchBrowser": false
+        }
+    ]
+}
